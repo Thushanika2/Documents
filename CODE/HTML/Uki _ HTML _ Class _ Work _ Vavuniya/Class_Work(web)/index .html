@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uki Technology School Vavuniya</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        .bottom-space {margin-bottom: 40px;}
+        table {border-collapse: collapse; width: 100%; border-color: white;}
+        th {background-color: white; color: black; padding: 10px;}
+        td {border: 2px solid blank; padding: 10px; border-color: white;}
+        li {color: darkblue; }
+        .my-element {padding-left: 20px;}
+        li {margin-block: 10px;}
+        li {color: darkblue;}
+        p  {line-height: 1.5;}
+        .my-section {margin: 10px;}
+        a {color: rgb(149, 19, 163); text-decoration: none;}
+        a:hover {color:rgb(149, 19, 163);}
+        form {background-color: cyan; padding: 20px; max-width: 600px; max-height: 2000px; border: 2px black; padding: 15px; border-radius: 5px;}
+        .form-group {margin-bottom: 15px; max-width: 100px;}
+        </style>
+    </head>
+    <body style="background-color:rgb(93, 180, 202);">
+        <h1 style="color:white; text-align: center; font-size: 3rem;">Uki Technology School Vavuniya – HTML Practice</h1>
+        <section id="personal-details" style="background-color: rgb(106, 169, 187); color: black; padding: 20px; border: 2px solid black;">
+            <h2>Personal Details</h2>
+            <p style="background-color:whitesmoke; color:darkblue">
+                My name is <strong>Thushanika Paramalingam</strong>. I am <em>19 years old</em> and I am from <u>Vavuniya</u>. I am a student of Uki Technology School Vavuniya Centre. I am highly interested in technology and programming and my goal is to become a full stack developer.
+            </p>
+        </section>
+        <br>
+        <section id="student-o/l-results">
+            <table border="2" style="width: 200px;text-align: center; ">
+                <h2>Student O/L Results</h2>
+                <tr>
+                    <th> Subject </th>
+                    <th> Result </th>
+                </tr>
+                <tr>
+                    <td> Tamil </td>
+                    <td> A </td>
+                </tr>
+                <tr>
+                    <td> Maths </td>
+                    <td> A </td>
+                </tr>
+                <tr>
+                    <td> Religion </td>
+                    <td> A </td>
+                </tr>
+                <tr>
+                    <td> Music </td>
+                    <td> A </td>
+                </tr>
+                <tr>
+                    <td> Agriculture </td>
+                    <td> B </td>
+                </tr>
+                <tr>
+                    <td> English </td>
+                    <td> B </td>
+                </tr>
+                <tr>
+                    <td> History </td>
+                    <td> B </td>
+                </tr>
+                <tr>
+                    <td> Geography </td>
+                    <td> B </td>
+                </tr>
+                <tr>
+                    <td> Science </td>
+                    <td> C </td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <section id="Uki Technology School Centers" style="background-color: rgb(106, 169, 187); color: black; padding: 20px; border: 2px solid black;">
+            <h2>Uki Technology School Centers</h2>
+            <ul class="my-list">
+                <li>Uki Vavuniya</li>
+                <li>Uki Jaffna</li>
+                <li>Uki Kilinochchi</li>
+                <li>Uki Mannarv</li>
+            </ul>
+        </section>
+        <section  class="my-section">
+            <h2>Courses Offered</h2>
+            <ol>
+                <li>Full Stack Full Time</li>
+                <li>Full Stack Part Time</li>
+                <li>Project Management</li>
+                <li>Digital Marketing</li>
+            </ol>
+        </section>
+        <section id="useful-links">
+            <a href="https://uki.life" target="_blank" rel="noopenernoreferrer"> Uki.Life </a>
+        </section>
+        <section id="Uki Technology School Student Registration Form">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <h2>Uki Technology School Student Registration Form</h2>
+                <div>
+                    <label for="profile_picture">Profile Picture:</label><br>
+                    <!-- Input for file selection -->
+                     <input type="file" id="profile_picture" name="profile_picture" accept="image/png, image/jpeg" onchange="previewImage (event)"><br>
+                    <!-- Image tag for preview -->
+                     <img id="image_preview" src="#" alt="Image Preview" style="display: none; max-width: 200px; max-height: 200px;"><br>
+                </div>
+                <div>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="first_name" placeholder="Enter your first name" required>
+                    <br>
+                    <br>
+                    <label for="mname">Middle name:</label>
+                    <br>
+                    <input type="text" id="mname" name="middle_name" placeholder="Enter yor middle name" required>
+                    <br>
+                    <br>
+                    <label for="lname">Last name:</label>
+                    <br>
+                    <input type="text" id="lname" name="last_name" placeholder="Enter yor last name" required>
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="date_of_birth" required><br>
+                </div>
+                <div>
+                <p>Please select your gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <lable for="female">Female</lable>
+                </div>
+                <br>
+                <div>
+                  <label for="email">Email address:</label><br>
+                  <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+                </div>
+                <br>
+                <div>
+                   <label for="user_password">Password:</label><br>
+                   <input type="password" id="user_password" name="user_password" placeholder="Enter your password" required><br>
+                   <label for="confirming_password">Confirm your password:</label><br>
+                   <input type="password" id="confirming_password" name="confirm_password" placeholder="Confirm your password" required><br>
+                </div>
+                <br>
+                <div>
+                   <label for="phone">Enter your phone number:</label><br>
+                   <select id="countryCode" name="countryCode">
+                       <option value="+94">LK (+94)</option>
+                       <option value="+91">IN (+91)</option>
+                       <option value="+44">GB (+44)</option>
+                       <option value="+1">US (+1)</option>
+                   <!-- Add more options -->
+                   </select>
+                   <input type="tel" id="phone" name="phone" placeholder="077 787 8787" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                <br>
+                <div>
+                   <label for="course">Choose a course:</label><br>
+                   <select name="course" id="course">
+                       <option value="select-a-course">Select a course</option>
+                       <option value="full-stack-full-time">Full Stack Full Time</option>
+                       <option value=" full-stack-part-time"> Full Stack Part Time</option>
+                       <option value=" project-management"> Project Management</option>
+                       <option value="digital-marketing">Digital Marketing</option>
+                   </select>
+                </div>
+                <br>
+                <div>
+                   <label for="district">Choose a district:</label><br>
+                   <select name="district" id="district">
+                       <option value="choose-a-district">Choose a district</option>
+                       <option value="jaffna">Jaffna</option>
+                       <option value="kilinochi">Kilinochi</option>
+                       <option value="vavuniya">Vavuniya</option>
+                       <option value="mannar">Mannar</option>
+                   </select> 
+                </div>
+                <br>
+                <div id="Uki Related Media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>YouTube</iframe>
+                <br>
+                <audio controls>
+                 <source src="" type="audio/mpeg">
+                </audio>
+                <audio controls>          
+                 <source src="audio.mp3" type="audio/mpeg">    
+                </audio>
+                </div>
+                <div>
+                     <button type="submit" style="background-color: rgb(221, 224, 115); color: rgb(86, 86, 219); padding: 5px; ">Submit</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

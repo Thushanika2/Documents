@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <h1>Student Result Manager</h1>
+
+ <div class="form">
+
+ <input type="text" name="inputName" id="inputName" class="inputName" required />
+
+ <input type="number" name="maths" id="maths" class="maths" required />
+
+ <input type="number" name="science" id="science" class="science" required />
+
+ <input type="number" name="english" id="english" class="english" required />
+
+ <button onclick="addRecord()"></button>
+
+ </div>
+
+ <div class="tables">
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Total</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>$</td>
+                <td>$</td>
+                <td>$</td>
+                <td>$</td>
+                <td>$</td>
+                <td>$</td>
+                <td>$</td>
+            </tr>
+        </tbody>
+    </table>
+ </div>
+
+ <script src="index.js"></script>
+</body>
+</html>

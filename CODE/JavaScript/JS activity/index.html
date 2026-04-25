@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+   <h1>Student Result Manager</h1>
+   <div class="form">
+    <input type="text" id="nameInput" placeholder="student name">
+    <input type="number" id="math" placeholder=" math marks">
+    <input type="number" id="science" placeholder=" science marks">
+    <input type="number" id="english" placeholder=" english marks">
+    <button onclick="addRecord()">Add record</button>
+   </div>
+   <table>
+    <thead>
+        <tr>
+            <th>no</th>
+<th>name</th>
+<th>math</th>
+<th>science</th>
+<th>english</th>
+<th>total</th>
+<th>average</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+
+    </tbody>
+   </table>
+
+  <script src="Js/script2.js"></script>
+</body>
+</html>

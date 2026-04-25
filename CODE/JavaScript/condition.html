@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition 2</title>
+</head>
+
+<body>
+    <h1>Condition for vote</h1>
+
+
+    <label for="age">Age</label>
+    <input type="text" name="age" id="age" required />
+    <br>
+    <br>
+    <button onclick="check()">check</button>
+    <br>
+    <br>
+    <label for="result">Result</label>
+    <input type="text" name="result" id="result">
+
+
+    <script>
+
+        function check() {
+
+            let age = Number(document.getElementById("age").value);
+
+            if (age > 18) {
+                console.log("You can vote");
+                document.getElementById("result").value = "You can vote";
+                document.getElementById("result").style = "color:green";
+            } else {
+                console.log("You can't vote");
+                document.getElementById("result").value = "You can't vote";
+                document.getElementById("result").style = "color:red";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  width: 600px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Layout */
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Inputs */
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/*Focus Effect */
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: darkblue;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 139, 0.3);
+}
+
+/* Inline Items */
+
+.inline {
+  display: flex;
+  gap: 15px;
+}
+
+.inline label {
+  font-weight: normal;
+}
+
+.inline input {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Textarea */
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/*  Button */
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: navy;
+}

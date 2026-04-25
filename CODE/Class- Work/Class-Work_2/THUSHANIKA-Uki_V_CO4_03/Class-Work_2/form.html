@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    
+    <label for="fname">Full Name</label>
+    <input type="text" name="fname" class="fname" placeholder="Enter your name" required="minimum3characters" >
+
+    <label for="email">Email</label>
+    <input type="email" name="email" class="email" placeholder="Enter your email" required="validemailformat" >
+
+    <label for="phonenumber">Phone Number</label>
+    <input type="number" name="phonenumber" class="phonenumber" placeholder="Enter phone number" required="10digits" >
+
+    <label for="age">Age</label>
+    <input type="number" name="age" class="age" placeholder="Enter age" required="between16and55">
+
+    <label for="password">Password</label>
+    <input type="password" name="password" class="password" placeholder="Enter password" required="minimum6characters">
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="dob" class="dob" required>
+
+    <label for="gender">Gender</label>
+    <br>
+    <input type="radio" name="gender" class="radio" required >
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" class="radio" required>
+    <label for="female">Female</label>
+    <br>
+    <br>
+    <label for="skills">Skills</label>
+    <br>
+    <input type="checkbox" name="skills" class="checkbox" required="novalidation">
+    <label for="html">HTML</label>
+    
+    <input type="checkbox" name="skills" class="checkbox" required="novalidation">
+    <label for="css">CSS</label>
+    
+    <input type="checkbox" name="skills" class="checkbox" required="novalidation">
+<label for="javascript">JavaScript</label>
+    <br>
+    <br>
+    <label for="country">Country</label>
+    <input type="hidden" name="country" required>
+    <option value="Sri Lanka"></option>
+    <option value="India"></option>
+    <option value="Gemany"></option>
+    
+    <label for="address">Address</label>
+    <textarea name="address" class="address" placeholder="Enter address" required></textarea>
+
+    <label for="message">Message</label>
+    <textarea name="message" class="message" placeholder="Enter message" required></textarea>
+
+    <button>Register</button>
+
+</body>
+</html>

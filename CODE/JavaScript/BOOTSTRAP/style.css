@@ -1,0 +1,12 @@
+.enter {
+    background-color: green;
+    width: 25%;
+    height: 25%;
+}
+
+.exit {
+    background-color: red;
+    width: 25%;
+    height: 25%;
+}
+

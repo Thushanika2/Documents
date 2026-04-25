@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+}
+
+.container form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+input {
+    padding: 10px 50px;
+    border-radius: 5px;
+    border-color: rgba(194, 190, 190, 0.546);
+}
+
+.fname {
+    display: block;
+}
+
+.email {
+    display: block;
+}
+
+.phonenumber {
+    display: block;
+}
+
+.age {
+    display: block;
+}
+
+.password {
+    display: block;
+}
+
+.dob {
+    display: block;
+}
+
+.address {
+    display: block;
+}
+
+.message {
+    display: block;
+}
+
+button {
+    display: block;
+}

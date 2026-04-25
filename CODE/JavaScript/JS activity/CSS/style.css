@@ -1,0 +1,32 @@
+.form{
+    margin: 20px;
+}
+
+
+body{
+    font-family: Arial;
+    text-align: center;
+    background-color: antiquewhite;
+
+}
+table{
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: white;
+
+    
+}
+th,td{
+    border: 2px;
+    padding: 10px;
+
+}
+th{
+    background:#333;
+    color: white;
+    
+
+}
+
+

@@ -1,0 +1,166 @@
+/* Genaral Page Styling */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #F4F4F4;
+}
+
+.container {
+    padding: 0 70px;
+    margin-top: 80px;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8PX 12PX;
+}
+
+.nav-links a:hover {
+    background: #444;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: lightblue;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.hero button:hover {
+    background: navy;
+}
+
+/* Courses section */
+
+.courses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.card button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
+
+.card  button:hover {
+    background-color: #555;
+}
+
+/* Table section */
+
+.studets {
+    padding: 30px;
+}
+
+.students table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.students th, .students td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.students thead {
+    background: #318131;
+    color: white;
+}
+
+.students tbody tr:nth-child(even) {
+    background: #F2F2F2;
+}
+
+.students tfoot {
+    background: #ddd;
+    font-weight: bold;
+}
+
+/* Contact From */
+
+.contact {
+    padding: 30px;
+}
+
+.contact form {
+    max-width: 400px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact button {
+    background: rgb(5, 5, 143);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.contact button:hover {
+    background-color: navy;
+}
+
+form button {
+    background-color: rgb(10, 10, 195);
+    border: 1px solid black;
+    color: white;
+
+}
+
+/* footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 73px;
+}
