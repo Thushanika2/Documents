@@ -1,0 +1,36 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+  background-color: blanchedalmond;
+  padding: 15px;
+}
+.header ul {
+  display: flex;
+  gap: 50px
+  
+}
+
+.header li{
+  list-style: none
+}
+
+.link-page{
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+.Footer {
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+}
+
+
+.Link-page {
+  text-decoration: none;
+}

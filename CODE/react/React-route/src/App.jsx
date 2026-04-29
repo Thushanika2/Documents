@@ -5,18 +5,22 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PageNotFound from "./pages/PageNotFound";
+import Layout from "./components/NotChange";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+
+            <Route path="contact" element={<Contact />} />
+          </Route>
+          <Route path="*" element={<PageNotFound/>} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </>
   );
