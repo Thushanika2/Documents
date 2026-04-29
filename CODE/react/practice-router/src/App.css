@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+}
+.Home {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: flex;
+}
+
+.Login {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: flex;
+}
+
+.About {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: flex;
+}
+
+.NotFound {
+  background-color: gray;
+  height: 100vh;
+  display: flex;
+}
+
+.Header {
+  background-color: black;
+  margin: auto;
+  display: flex;
+}
+
+.Header li {
+  list-style: none;
+}
+
+.Links-page {
+  color: white;
+  text-decoration: none;
+}
+
+
+.Footer {
+  background-color: black;
+  display: flex;
+}
+
+.Footer p {
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.Layout {
+  height: 100vh;
+  margin: auto;
+}
